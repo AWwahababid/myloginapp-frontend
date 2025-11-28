@@ -38,7 +38,7 @@ function Navbar() {
                 <Link to="/tasks" className="hover:text-purple-400 transition">Tasks</Link>
               </>
             )}
-            {isAdmin && (
+            {(
               <Link to="/admin" className="hover:text-purple-400 transition">Admin</Link>
             )}
             <button

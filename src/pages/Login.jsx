@@ -16,6 +16,7 @@ function Login() {
       localStorage.setItem("isAdmin", String(data.isAdmin));
       // Dispatch storage event to notify other components
       window.dispatchEvent(new Event("storage"));
+      console.log("Login successful", data);
       // Navigate after setting token
       setTimeout(() => {
         navigate(data.isAdmin ? "/admin" : "/profile", { replace: true });
